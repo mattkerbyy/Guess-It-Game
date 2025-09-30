@@ -1,0 +1,64 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Assembly",
+            "type": "shell",
+            "command": "nasm",
+            "args": [
+                "-f", "elf32",
+                "-o", "${fileBasenameNoExtension}.o",
+                "${file}"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Link Object File",
+            "type": "shell",
+            "command": "ld",
+            "args": [
+                "-m", "elf_i386",
+                "-o", "${fileBasenameNoExtension}",
+                "${fileBasenameNoExtension}.o"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": [],
+            "dependsOn": "Build Assembly"
+        },
+        {
+            "label": "Build and Link",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "Build Assembly",
+                "Link Object File"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Run Program",
+            "type": "shell",
+            "command": "./${fileBasenameNoExtension}",
+            "group": "test",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "panel": "new"
+            },
+            "dependsOn": "Build and Link"
+        }
+    ]
+}
