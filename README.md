@@ -43,6 +43,8 @@ If you are on Windows, you must download Ubuntu LTS from the Microsoft Store to 
 **For Linux/macOS Users:**
 Install NASM and follow the same build steps above.
 
+> Note: If installing Ubuntu LTS fails, it’s likely because virtualization is disabled in your BIOS. You must reboot, enter your BIOS/UEFI settings, and enable hardware virtualization (often called Intel VT-x, AMD SVM, Virtualization Technology, etc.). Without that, WSL cannot run properly.
+
 ## Why I Made This
 
 I built Guess It to deepen my understanding of Assembly language programming and explore low-level system interactions. This project helped me learn about memory management, system calls, and the fundamentals of how programs communicate with the operating system.
