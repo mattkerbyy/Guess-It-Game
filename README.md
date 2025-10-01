@@ -22,19 +22,20 @@ This project is an Assembly language program that generates a random number betw
 If you are on Windows, you must download Ubuntu LTS from the Microsoft Store to use WSL Shell for running the project commands. Additionally, you need to install NASM regardless of your OS to translate the assembly code into machine code.
 
 1. Install WSL and Ubuntu LTS from Microsoft Store
-2. Install NASM:
+2. 
+3. Install NASM:
     ```bash
     sudo apt update
     sudo apt install nasm
     ```
 
-3. Clone the repository:
+4. Clone the repository:
 
     ```bash
     git clone https://github.com/mattkerbyy/Guess-It-Game.git
     ```
 
-4. Build and run:
+5. Build and run:
     ```bash
     # Open your WSL shell and run
     make run
