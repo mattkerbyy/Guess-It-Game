@@ -48,7 +48,7 @@ Install NASM and follow the same build steps above.
 
 ## Why I Made This
 
-I built Guess It to deepen my understanding of Assembly language programming and explore low-level system interactions. This project helped me learn about memory management, system calls, and the fundamentals of how programs communicate with the operating system.
+I built "Guess It" to deepen my understanding of Assembly language programming and explore low-level system interactions. This project helped me learn about memory management, system calls, and the fundamentals of how programs communicate with the operating system.
 
 ---
 
