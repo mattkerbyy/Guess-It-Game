@@ -1,6 +1,6 @@
 # 🎯 "Guess It" Game!
 
-Welcome to my number guessing game project. This classic game is built with x86 Assembly Language using NASM to practice low-level programming concepts.
+Welcome to my number guessing game project. This classic game is built with **x86 Assembly Language** using **NASM** to practice low-level programming concepts.
 
 ## About
 
